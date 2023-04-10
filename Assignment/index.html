@@ -12,16 +12,17 @@
         a[target]{
             color: red;
         }
-
-        .p-par {
-            color: red;
-        }
-
-        .p-nepar {
+        #second-div>p:nth-child(odd){
             color: blue;
         }
-
-        #p-10:hover {
+        #second-div>p:nth-child(even){
+            color: red;
+        }
+        #first-div>p::after{
+            content: " -NEW";
+            color: yellow;
+        }
+        body>p:last-of-type:hover{
             font-style: italic;
         }
 
@@ -41,15 +42,15 @@
         <p>Paragraph 3</p>
         <div id="second-div">
             <h3>Sub subheading</h3>
-            <p class="p-par">Paragraph 4</p>
-            <p class="p-nepar">Paragraph 5</p>
-            <p class="p-par">Paragraph 6</p>
-            <p class="p-nepar">Paragraph 7</p>
-            <p class="p-par">Paragraph 8</p>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
         </div>
     </div>
     <p>Paragraph 9</p>
-    <p id="p-10">Paragraph 10</p>
+    <p>Paragraph 10</p>
 </body>
 
 </html>
